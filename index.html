@@ -1,2 +1,229 @@
-<a href="https://mobile.fucha-aplikacja.pl/newContact">Click me!</a>
-<a href="https://mobile.fucha-aplikacja.pl/newAdvertisement/21441940-62a5-4933-9c52-e699286b033a">Advertisement</a>
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fucha</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header
+      class="bg-gradient-to-r from-[#4632d9] to-[#0cd6f9] text-white h-[90px] pt-2 sticky top-0 z-50"
+    >
+      <div
+        class="container mx-auto flex justify-between items-center py-4 px-16"
+      >
+        <img
+          src="https://fucha-aplikacja.pl/wp-content/uploads/2024/01/b348bd48e650ea0464418035f43f2bf0df6c30a7.webp"
+          alt="Fucha"
+          class="w-8 h-8"
+        />
+        <nav
+          class="main-menu hidden md:flex md:items-center md:space-x-4 md:justify-end"
+        >
+          <a
+            href="https://fucha-aplikacja.pl/"
+            class="hover:underline underline-offset-[37px]"
+            >Główna</a
+          >
+          <a
+            href="https://fucha-aplikacja.pl/contact-us/"
+            class="hover:underline underline-offset-[37px]"
+            >Kontakt</a
+          >
+          <a
+            href="#"
+            class="md:border-l md:border-white md:pl-20 text-sm text-right"
+            style="font-family: 'Montserrat', sans-serif"
+            >Kontakt@Fucha-<br />Aplikacja.pl</a
+          >
+        </nav>
+        <button class="menu-toggle md:hidden" aria-label="Toggle menu">
+          <img
+            src={require("/images/hamburger.png")}
+            class="h-[37px] w-[37px]"
+            alt="Menu"
+          />
+        </button>
+      </div>
+      <div
+        class="md:hidden absolute bg-white top-[90px] w-full left-0 z-10 hidden"
+        id="mobileMenu"
+      >
+        <a
+          href="https://fucha-aplikacja.pl/"
+          class="block py-6 px-4 text-center text-[#353535] hover:text-[#26defc] border-b-2 border-[#353535] text-base"
+          >Główna</a
+        >
+        <a
+          href="https://fucha-aplikacja.pl/contact-us/"
+          class="block py-6 px-4 text-center text-[#353535] hover:text-[#26defc] border-b-2 border-[#353535] text-base"
+          >Kontakt</a
+        >
+      </div>
+    </header>
+    <main class="container mx-auto py-12 px-8 md:px-72">
+      <section class="flex flex-col items-center justify-center mb-12">
+        <h2
+          class="text-3xl font-bold mb-4"
+          style="font-family: 'Varela Round', sans-serif"
+        >
+          Zlecaj, wykonuj, zarabiaj
+        </h2>
+        <p
+          class="text-lg text-gray-500"
+          style="font-family: 'Varela Round', sans-serif"
+        >
+          Fucha to aplikacja, która łączy osoby poszukujące zleceń z tymi,
+          którzy chcą je wykonać.
+        </p>
+      </section>
+      <section class="flex flex-col items-center justify-center gap-8">
+        <div class="hidden md:flex md:w-[700px]">
+          <img
+            src={require("/images/fucha.jpg")}
+            alt="Fucha"
+            class="rounded-[80px] rounded-tl-[320px]"
+          />
+        </div>
+        <div
+          class="flex flex-col mt-4 bg-[#3a71ff] w-full md:w-[700px] p-8 rounded-[20px] rounded-br-[80px]"
+        >
+          <p
+            class="text-center mt-4 text-3xl text-white pb-6"
+            style="font-family: 'Varela Round', sans-serif"
+          >
+            Pobierz już teraz
+          </p>
+          <div class="flex flex-row justify-center gap-4 mt-4">
+            <a
+              href="https://apps.apple.com/pl/app/fucha-aplikacja/id1667236708?l=pl"
+            >
+              <img
+                src={require("/images/apple.svg")}
+                alt="Apple Store"
+                class="w-[240px] h-[60px]"
+              />
+            </a>
+            <a
+              href="https://play.google.com/store/apps/details?id=com.fucha&gl=PL&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1"
+            >
+              <img
+                src={require("/images/google.png")}
+                alt="Google Play"
+                class="w-[200px] h-[60px] object-cover"
+              />
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="text-white py-4 px-8 md:px-72">
+      <div class="flex flex-row justify-start pb-12">
+        <a
+          class="text-[#353535] hover:text-[#26defc]"
+          href="https://fucha-aplikacja.pl/regulamin/"
+          >Regulamin</a
+        >
+        <p class="text-black px-4 font-semibold">|</p>
+        <a
+          class="text-[#353535] hover:text-[#26defc]"
+          href="https://fucha-aplikacja.pl/privacy/"
+          >Polityka prywatności</a
+        >
+      </div>
+      <div class="gap-2 flex flex-row">
+        <a
+          href="https://www.facebook.com/profile.php?id=100087343825655"
+          target="_blank"
+          class="p-4 bg-[#3c5997] rounded-md text-white flex items-center justify-center h-[50px] w-[50px]"
+        >
+          <span class="sr-only">Facebook</span>
+          <svg
+            class="w-8 h-8"
+            viewBox="0 0 512 512"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill="currentColor"
+              d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"
+            ></path>
+          </svg>
+        </a>
+        <a
+          href="https://www.linkedin.com/company/fucha-aplikacja/"
+          target="_blank"
+          class="p-4 bg-[#0277b5] text-white rounded-md flex items-center justify-center h-[50px] w-[50px]"
+        >
+          <span class="sr-only">Linkedin</span>
+          <svg
+            class="w-8 h-8"
+            viewBox="0 0 448 512"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill="currentColor"
+              d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"
+            ></path>
+          </svg>
+        </a>
+        <a
+          href="https://www.instagram.com/fucha.aplikacja/?igshid=YmMyMTA2M2Y%3D"
+          target="_blank"
+          class="p-4 bg-[#262626] text-white rounded-md flex items-center justify-center h-[50px] w-[50px]"
+        >
+          <span class="sr-only">Instagram</span>
+          <svg
+            class="w-8 h-8"
+            viewBox="0 0 448 512"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill="currentColor"
+              d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
+            ></path>
+          </svg>
+        </a>
+        <a
+          href="https://www.tiktok.com/@fucha.aplikacja"
+          target="_blank"
+          class="p-4 bg-[#69727d] text-white rounded-md flex items-center justify-center h-[50px] w-[50px]"
+        >
+          <span class="sr-only">Tiktok</span>
+          <svg
+            class="w-8 h-8"
+            viewBox="0 0 448 512"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill="currentColor"
+              d="M448,209.91a210.06,210.06,0,0,1-122.77-39.25V349.38A162.55,162.55,0,1,1,185,188.31V278.2a74.62,74.62,0,1,0,52.23,71.18V0l88,0a121.18,121.18,0,0,0,1.86,22.17h0A122.18,122.18,0,0,0,381,102.39a121.43,121.43,0,0,0,67,20.14Z"
+            ></path>
+          </svg>
+        </a>
+      </div>
+      <hr class="mt-8 mb-10" />
+      <p class="text-right text-[#353535] mr-16 text-sm">
+        &copy; 2024 All Rights Reserved
+      </p>
+    </footer>
+    <script>
+      const menuToggle = document.querySelector(".menu-toggle");
+      const mobileMenu = document.getElementById("mobileMenu");
+
+      menuToggle.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+    </script>
+  </body>
+</html>
